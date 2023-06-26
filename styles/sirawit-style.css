@@ -27,10 +27,29 @@ p, li {
 img {
     display: block;
     margin: 0 auto;
+    padding: 5px 0;
 }
 a {
     color: yellow
 }
 a:hover {
     color: #14FFEC;
+}
+figure {
+    margin: 10px auto;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: white;
+    text-align: center;
+}
+.active-content {
+    border: 4px dotted red;
+}
+#channel-description {
+    color: blue;
+    text-shadow:
+    -1px -1px 0 lightblue,
+    1px -1px 0 lightblue,
+    -1px 1px 0 lightblue,
+    1px 1px 0 lightblue; 
 }
