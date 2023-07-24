@@ -18,7 +18,8 @@ function displayStats(array) {
     let average = findAverage(array);
     let minMax = findMinMax(array);
     alert("For the list " + ((array.length != 0) ? array : "that is empty") +
-        ", the average is " + average + ", the minimum is " + (minMax.min ?? 0) + ", and the maximum is " + (minMax.max ?? 0));
+        ", the average is " + average + ", the minimum is " + (minMax.min ?? 0) +
+        ", and the maximum is " + (minMax.max ?? 0));
 }
 
 function findAverage(array) {

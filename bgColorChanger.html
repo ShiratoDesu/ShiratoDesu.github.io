@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+            div {
+                background-color: blue;
+                height: 100px;
+                width: 25%;
+                float: left;
+                margin: 5px 0;
+            }
+        </style>
+    </head>
+    <body>
+        <script>
+            for (let i = 1; i <= 16; i++) {
+                let myDiv = document.createElement('div');
+                document.body.appendChild(myDiv);
+            }
+            let random = (number) => Math.floor(Math.random() * number);
+            let bgChange = (e) => {
+                let randomColor = 'rgb(' + random(255) + ',' + random(255) + ',' + random(255) + ')';
+                e.target.style.backgroundColor = randomColor;
+            }
+            let divs = document.querySelectorAll('div');
+            for (let i = 0; i < divs.length; i++) {
+                if (i % 2 == 0) {
+                    divs[i].addEventListener('click', bgChange);
+                } else {
+                    divs[i].addEventListener('click', bgChange, {once : true});
+                }
+            }
+        </script>
+    </body>
+</html>
